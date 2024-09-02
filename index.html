@@ -95,8 +95,7 @@
         <h2>About Me</h2>
         <p>They dont know me son !</p>
         <button id="aboutButton">View more about me</button>
-        <p></p>
-        <button>Här</button>
+        <button id="hereButton">Här</button>
       </section>
 
       <section id="projects">
@@ -116,6 +115,16 @@
               ? "Hide Projects"
               : "View Projects";
         });
+
+        document
+        .getElementById("hereButton")
+        .addEventListener("click", function () {
+          this.textContent =
+            this.textContent === "Här"
+              ? "Där"
+              : "Här";
+        });
+
         document
         .getElementById("aboutButton")
         .addEventListener("click", function () {
