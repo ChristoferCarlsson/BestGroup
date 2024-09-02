@@ -86,6 +86,7 @@
       <section id="about">
         <h2>About Me</h2>
         <p>They dont know me son !</p>
+        <button id="aboutButton">View more about me</button>
       </section>
 
       <section id="projects">
@@ -104,6 +105,14 @@
             this.textContent === "View Projects"
               ? "Hide Projects"
               : "View Projects";
+        });
+        document
+        .getElementById("aboutButton")
+        .addEventListener("click", function () {
+          this.textContent =
+            this.textContent === "View more about me"
+              ? "Hide more about me"
+              : "View more about me";
         });
     </script>
   </body>
