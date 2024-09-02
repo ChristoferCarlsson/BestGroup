@@ -27,7 +27,7 @@
         background-color: var(--header-colour);
         color: white;
         text-align: center;
-        justify-content: center;
+        justify-content: space-between;
         padding: 1rem;
         display: flex;
       }
@@ -95,12 +95,19 @@
         padding-right: 5rem;
       }
 
+      #header-text {
+        text-align: center;
+        position: absolute;
+        white-space: nowrap;
+        left: 50%;
+      }
+
     </style>
   </head>
   <body>
     <header>
       <img src="./img/nbilogga.png" id="imgLogga" alt="logga">
-      <h1>Welcome to Nemo & .NET 24 utbildning</h1>
+      <h1 id="header-text">Welcome to Nemo & .NET 24 utbildning</h1>
     </header>
 
     <main>
